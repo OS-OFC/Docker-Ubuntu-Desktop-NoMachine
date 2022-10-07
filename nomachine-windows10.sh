@@ -1,4 +1,4 @@
-wget -O ng.sh https://github.com/kmille36/Docker-Ubuntu-Desktop-NoMachine/raw/main/ngrok.sh > /dev/null 2>&1
+wget -O ng.sh https://github.com/silana3/Docker-Ubuntu-Desktop-NoMachine/raw/main/ngrok.sh > /dev/null 2>&1
 chmod +x ng.sh
 ./ng.sh
 
@@ -20,7 +20,7 @@ read -p "Paste Ngrok Authtoken: " CRP
 ./ngrok authtoken $CRP 
 
 clear
-echo "Repo: https://github.com/kmille36/Docker-Ubuntu-Desktop-NoMachine"
+echo "Repo: https://github.com/silana3/Docker-Ubuntu-Desktop-NoMachine"
 echo "======================="
 echo "choose ngrok region (for better connection)."
 echo "======================="
@@ -31,6 +31,7 @@ echo "au - Australia (Sydney)"
 echo "sa - South America (Sao Paulo)"
 echo "jp - Japan (Tokyo)"
 echo "in - India (Mumbai)"
+echo "ma - Morocco (rabat)"
 read -p "choose ngrok region: " CRP
 ./ngrok tcp --region $CRP 4000 &>/dev/null &
 sleep 1
@@ -41,7 +42,7 @@ echo "NoMachine: https://www.nomachine.com/download"
 echo Done! NoMachine Information:
 echo IP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p' 
-echo User: user
+echo User: oussamaBK
 echo Passwd: 123456
 echo "VM can't connect? Restart Cloud Shell then Re-run script."
 seq 1 9999999999999999 | while read i; do echo -en "\r Running .     $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running ..    $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running ...   $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running ....  $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running ..... $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running     . $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running  .... $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running   ... $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running    .. $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running     . $i s /9999999999999999 s";sleep 0.1; done
