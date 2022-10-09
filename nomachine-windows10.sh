@@ -41,7 +41,7 @@ echo "NoMachine: https://www.nomachine.com/download"
 echo Done! NoMachine Information:
 echo IP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p' 
-echo User: user
-echo Passwd: 123456
+echo User: oussama
+echo Passwd: bakrine
 echo "VM can't connect? Restart Cloud Shell then Re-run script."
 seq 1 9999999999999999 | while read i; do echo -en "\r Running .     $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running ..    $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running ...   $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running ....  $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running ..... $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running     . $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running  .... $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running   ... $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running    .. $i s /9999999999999999 s";sleep 0.1;echo -en "\r Running     . $i s /9999999999999999 s";sleep 0.1; done
