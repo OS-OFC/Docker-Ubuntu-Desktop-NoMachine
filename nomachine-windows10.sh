@@ -1,4 +1,4 @@
-wget -O ng.sh https://github.com/silana3/Docker-Ubuntu-Desktop-NoMachine/raw/main/ngrok.sh > /dev/null 2>&1
+wget -O ng.sh https://github.com/OS-OFC/Docker-Ubuntu-Desktop-NoMachine/raw/main/ngrok.sh > /dev/null 2>&1
 chmod +x ng.sh
 ./ng.sh
 
@@ -15,12 +15,13 @@ function goto
 
 : ngrok
 clear
-echo "Go to: https://dashboard.ngrok.com/get-started/your-authtoken"
+echo "Go to: https://dashboard.ngrok.com/get-started/your-authtoken
+devloper : oussama bakrine"
 read -p "Paste Ngrok Authtoken: " CRP
 ./ngrok authtoken $CRP 
 
 clear
-echo "Repo: https://github.com/silana3/Docker-Ubuntu-Desktop-NoMachine"
+echo "Repo: https://github.com/OS-OFC/Docker-Ubuntu-Desktop-NoMachine"
 echo "======================="
 echo "choose ngrok region (for better connection)."
 echo "======================="
